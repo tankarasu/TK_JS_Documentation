@@ -1,0 +1,24 @@
+{
+  "name": "tk_js_documentation",
+  "version": "1.0.0",
+  "description": "> the aim of this project is to provide a documentation of Javascript. The main goal is just a way for me to learn more efficiently Javascript and not to be exhaustively.",
+  "main": "write.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:write": "nodemon write.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tankarasu/TK_JS_Documentation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tankarasu/TK_JS_Documentation/issues"
+  },
+  "homepage": "https://github.com/tankarasu/TK_JS_Documentation#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
