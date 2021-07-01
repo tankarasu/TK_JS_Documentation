@@ -13,5 +13,7 @@
 - Methods of Reflect object:
   - [Reflect.has( )](Method/Reflect.has.md)
   - [Reflect.get( )](Method/Reflect.get.md)
-
+  - [Reflect.set( )](Method/Reflect.set.md)
+  - [Reflect.ownKeys( )](Method/Reflect.ownKeys.md)
+  
 ---

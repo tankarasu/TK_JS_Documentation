@@ -49,7 +49,7 @@ const keyObject = objArr.concat(symArr);
 const keyReflect = Reflect.ownKeys(target);
 ```
 
-### using in our example
+### Using in our example
 
 ```ts
 Reflect.ownKeys(person)
@@ -58,3 +58,5 @@ Reflect.ownKeys(person)
 Reflect.ownKeys(arr)
 // => [ "length" ]
 ```
+
+[go home](../Reflect.md)
