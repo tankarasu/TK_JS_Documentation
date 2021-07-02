@@ -1,7 +1,11 @@
-# Reflect.set( )
+# Reflect.set
 
-> The Reflect.set method allows you to set a property on an object.  
-> It does property assignment and is like the property accessor syntax as a function.
+## 1. Description
+
+- The Reflect.set method allows you to set a property on an object.  
+- It does property assignment and is like the property accessor syntax as a function.
+  
+---
 
 ```ts
 const person = {

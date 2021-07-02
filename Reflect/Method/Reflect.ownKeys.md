@@ -1,7 +1,11 @@
-# Reflect.ownKeys( )
+# Reflect.ownKeys
 
-> The static **Reflect.ownKeys()** method returns an array of the target object's own property keys.  
-> It implements internal method:  **[[ownPropertyKeys]]**
+## 1. Description
+
+- The static **Reflect.ownKeys()** method returns an array of the target object's own property keys.  
+- It implements internal method:  **[[ownPropertyKeys]]**
+
+---
 
 ```ts
 const ageSym = Symbol.for('age')
@@ -58,5 +62,7 @@ Reflect.ownKeys(person)
 Reflect.ownKeys(arr)
 // => [ "length" ]
 ```
+
+---
 
 [go home](../Reflect.md)

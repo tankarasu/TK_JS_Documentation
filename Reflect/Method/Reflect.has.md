@@ -1,6 +1,11 @@
-# Reflect.has( )
+# Reflect.has
 
-> this method check if a property exists on an object, like "in operator".
+## 1. Description
+
+- this method check if a property exists on an object.
+- it work like "in operator".
+
+---
 
 ```ts
 const person = {
@@ -22,7 +27,7 @@ Reflect.has( person, "toString" ) // on prototype chain
 // => true
 ```
 
-> Parameters
+## Parameters
 
 ```ts
 // types of parameters

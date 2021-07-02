@@ -1,7 +1,11 @@
-# Reflect.get( )
+# Reflect.get
 
-> The Reflect.get method allows you to get a property on an object.  
-> It is like the property accessor syntax as a function.
+## 1. Description
+
+- The Reflect.get method allows you to get a property on an object.  
+- It is like the property accessor syntax as a function.
+
+---
 
 ```ts
 const arr = [ 1, 2 ];
@@ -21,7 +25,7 @@ Reflect.get( arr, 1 );
 // => 2
 ```
 
-> Parameters
+## Parameters
 
 ```ts
 // types of parameters
