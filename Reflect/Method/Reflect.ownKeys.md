@@ -7,6 +7,40 @@
 
 ---
 
+## 2. Syntax
+
+```ts
+Reflect.has(target);
+```
+
+---
+
+## 3. Parameters
+
+### Type definition
+
+```ts
+target : object;
+```
+
+### Throws
+
+if target is not an object
+
+```ts
+throw TypeError 
+```
+
+### Return value
+
+```ts
+return Array<string>
+```
+
+---
+
+---
+
 ```ts
 const ageSym = Symbol.for('age')
 
@@ -18,9 +52,6 @@ const person = {
 
 const arr = [];
 
-// syntax
-
-Reflect.has(target);
 ```
 
 ## Parameters

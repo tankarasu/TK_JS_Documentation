@@ -7,15 +7,48 @@
 
 ---
 
+## 2. Syntax
+
+```ts
+    Reflect.has(target , propertyKey );
+```
+
+---
+
+## 3. Parameters
+
+### Type definition
+
+```ts
+target : object;
+propertyKey : string | symbol;
+```
+
+### Throws
+
+if target is not an object
+
+```ts
+throw TypeError 
+```
+
+### Return value
+
+is property exist on object?
+
+```ts
+return boolean
+```
+
+---
+
+---
+
 ```ts
 const person = {
     id: 1,
     name: "Tan"
 }
-
-// syntax
-
-Reflect.has(target , propertyKey );
 
 // It use internal method : 
 [[ HasProperty ]]

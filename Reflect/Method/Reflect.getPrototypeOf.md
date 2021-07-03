@@ -9,4 +9,41 @@
 
 ---
 
+## 2. Syntax
+
+```ts
+Reflect.getPrototypeOf( target );
+```
+
+---
+
+## 3. Parameters
+
+### Type definition
+
+```ts
+target : object;
+```
+
+### Throws
+
+if target is not an object
+
+```ts
+throw TypeError 
+```
+
+### Return value
+
+the prototype of given object.  
+If there are no inherited properties, null is returned.
+
+```ts
+return prototype | null
+```
+
+---
+
+---
+
 [go home](../Reflect.md)

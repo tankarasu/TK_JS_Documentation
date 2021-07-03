@@ -10,6 +10,43 @@
 
 ---
 
+## 2. Syntax
+
+```ts
+Reflect.construct( target, argumentsList );  
+Reflect.construct( target, argumentsList, newTarget );
+```
+
+---
+
+## 3. Parameters
+
+### Type definition
+
+```ts
+target : function;
+argumentList : []; // an Array-like object
+newTarget? : constructor; 
+```
+
+### Throws
+
+if target and/or newTarget are not constructor
+
+```ts
+throw TypeError 
+```
+
+### Return value
+
+a new instance of target or newTarget initialized by target as a constructor with given arguments.
+
+```ts
+return new target | new newTarget
+```
+
+---
+
 ---
 
 [go home](../Reflect.md)

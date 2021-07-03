@@ -10,4 +10,42 @@
 
 ---
 
+## 2.Syntax
+
+```ts
+Reflect.getOwnPropertyDescriptor( target, propertyKey );
+```
+
+---
+
+## 3. Parameters
+
+### Type definition
+
+```ts
+target : object;
+propertyKey : string | symbol;
+```
+
+### Throws
+
+if target is not an object
+
+```ts
+throw TypeError 
+```
+
+### Return value
+
+if the property exist on the object, it return a property descriptor object.  
+if not undefined.
+
+```ts
+return object | undefined
+```
+
+---
+
+---
+
 [go home](../Reflect.md)

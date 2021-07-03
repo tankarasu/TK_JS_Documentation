@@ -7,16 +7,53 @@
   
 ---
 
+## 2. Syntax
+
+```ts
+Reflect.set(target , propertyKey, value );
+Reflect.set(target , propertyKey, value, receiver );
+```
+
+---
+
+## 3. Parameters
+
+### Type definition
+
+```ts
+target : object;
+propertyKey : string | symbol;
+value : any;
+receiver? : object; // value of "this"
+```
+
+### Throws
+
+if target is not an object
+
+```ts
+throw TypeError 
+```
+
+### Return value
+
+is property correctly set?
+
+```ts
+return boolean
+```
+
+---
+
+---
+
 ```ts
 const person = {
     id: 1,
     name: "Tan"
 }
 
-// syntax
 
-Reflect.set(target , propertyKey, value );
-Reflect.set(target , propertyKey, value, receiver );
 // receiver = value of "this"
 ```
 

@@ -7,12 +7,43 @@
 
 ---
 
+## 2. Syntax
+
+```ts
+Reflect.get( target , propertyKey );
+Reflect.get( target , propertyKey, receiver? );
+```
+
+---
+
+## 3. Parameters
+
+### Type definition
+
+```ts
+target : object;
+propertyKey : string | symbol;
+receiver? : object;
+```
+
+### Throws
+
+if target is not an object
+
+```ts
+throw TypeError 
+```
+
+### Return value
+
+```ts
+return <any>
+```
+
+---
+
 ```ts
 const arr = [ 1, 2 ];
-// syntax
-
-Reflect.get(target , propertyKey );
-Reflect.get(target , propertyKey, receiver? );
 
 // code example
 
@@ -23,21 +54,6 @@ Reflect.get( person, "name" );
 Reflect.get( arr, 1 ); 
 // similarly => arr[1]
 // => 2
-```
-
-## Parameters
-
-```ts
-// types of parameters
-
-target : object
-propertyKey : string | symbol
-receiver? : object 
-
-throw TypeError // if target is not an object
-
-// return value
-return <any>
 ```
 
 ---

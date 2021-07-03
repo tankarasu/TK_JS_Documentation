@@ -4,7 +4,7 @@
   "description": "> the aim of this project is to provide a documentation of Javascript. The main goal is just a way for me to learn more efficiently Javascript and not to be exhaustively.",
   "main": "write.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watchAll",
     "dev:write": "nodemon write.js"
   },
   "repository": {
@@ -20,5 +20,12 @@
   "homepage": "https://github.com/tankarasu/TK_JS_Documentation#readme",
   "devDependencies": {
     "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.14.0",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
   }
 }

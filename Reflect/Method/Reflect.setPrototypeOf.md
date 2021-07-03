@@ -10,4 +10,42 @@
   
 ---
 
+## 2. Syntax
+
+```ts
+Reflect.setPrototypeOf(target, prototype)
+```
+
+---
+
+## 3. Parameters
+
+### Type definition
+
+```ts
+target : object;
+prototype : object | null;
+```
+
+### Throws
+
+if target is not an object.  
+if prototype is not object or null
+
+```ts
+throw TypeError 
+```
+
+### Return value
+
+is prototype correctly set?
+
+```ts
+return boolean
+```
+
+---
+
+---
+
 [go home](../Reflect.md)
