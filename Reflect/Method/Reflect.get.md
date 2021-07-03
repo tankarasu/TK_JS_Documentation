@@ -42,6 +42,8 @@ return <any>
 
 ---
 
+## 4. Code example
+
 ```ts
 const arr = [ 1, 2 ];
 

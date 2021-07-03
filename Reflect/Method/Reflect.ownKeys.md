@@ -39,7 +39,7 @@ return Array<string>
 
 ---
 
----
+## 4. Code example
 
 ```ts
 const ageSym = Symbol.for('age')
@@ -53,21 +53,6 @@ const person = {
 const arr = [];
 
 ```
-
-## Parameters
-
-```ts
-// types of parameters
-
-target : object
-
-throw TypeError // if target is not an object
-
-// return value
-return Array<key>
-```
-
-## Code example
 
 ### comparison with Object wrapper
 

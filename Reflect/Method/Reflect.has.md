@@ -42,36 +42,26 @@ return boolean
 
 ---
 
----
+## 4. Code example
 
 ```ts
 const person = {
     id: 1,
     name: "Tan"
 }
+```
 
-// It use internal method : 
+> It use internal method :
+
+```ts
 [[ HasProperty ]]
+```
 
-// Code example
+```ts
 
 Reflect.has( person, "id" ) // own property & inherited
 Reflect.has( person, "toString" ) // on prototype chain
 // => true
-```
-
-## Parameters
-
-```ts
-// types of parameters
-
-target : object
-propertyKey : string | symbol
-
-throw TypeError // if target is not an object
-
-// return value
-return <true | false>
 ```
 
 ---

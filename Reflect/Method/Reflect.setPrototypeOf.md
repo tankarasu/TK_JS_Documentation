@@ -46,6 +46,38 @@ return boolean
 
 ---
 
+## 4. Code example
+
+```ts
+let obj = {};
+Reflect.setPrototypeOf( obj, Object.prototype ); 
+// => true
+```
+
+> It can change an object's [[Prototype]] to null.
+
+```ts
+Reflect.setPrototypeOf( {}, null );
+// => true
+```
+
+> Returns false if target is not extensible.
+
+```ts
+Reflect.setPrototypeOf( Object.freeze( {} ), null ); 
+// => false
+```
+
+> Returns false if it cause a prototype chain cycle.
+
+```ts
+let target = {};
+
+let proto = Object.create( target );
+Reflect.setPrototypeOf( target, proto );
+// => false
+```
+
 ---
 
 [go home](../Reflect.md)

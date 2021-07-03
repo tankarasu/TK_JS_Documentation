@@ -43,6 +43,26 @@ return boolean
 
 ---
 
+## 4. Code example
+
+```ts
+let obj = {}
+Reflect.isExtensible( obj )  
+// => true
+
+Reflect.preventExtensions(obj)
+Reflect.isExtensible(obj)  
+// => false
+
+let sealedObj = Object.seal({})
+Reflect.isExtensible(sealedObj)  
+// => false
+
+let frozenObj = Object.freeze({})
+Reflect.isExtensible(frozenObj)  
+// => false
+```
+
 ---
 
 [go home](../Reflect.md)

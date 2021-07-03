@@ -45,38 +45,6 @@ return boolean
 
 ---
 
-## 4. Code
-
-```ts
-const person = {
-    id: 1,
-    name: "Tan"
-}
-
-
-// receiver = value of "this"
-```
-
----
-
-## Parameters
-
-```ts
-// types of parameters
-
-target : object
-propertyKey : string | symbol
-value : any
-receiver : object
-
-throw TypeError // if target is not an object
-
-// return value
-return <true | false>
-```
-
----
-
 ## Code example
 
 ```ts

@@ -43,6 +43,18 @@ return boolean
 
 ---
 
+## 4. Code example
+
+```ts
+let empty = {}
+Reflect.isExtensible(empty)  
+// => true
+
+Reflect.preventExtensions(empty)
+Reflect.isExtensible(empty)  
+// => false
+```
+
 ---
 
 [go home](../Reflect.md)
