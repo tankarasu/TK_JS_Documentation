@@ -45,7 +45,7 @@ return boolean
 
 ---
 
----
+## 4. Code
 
 ```ts
 const person = {

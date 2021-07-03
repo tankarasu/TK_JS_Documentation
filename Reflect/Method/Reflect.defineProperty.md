@@ -36,13 +36,33 @@ throw TypeError
 
 ### Return value
 
-is the property correctly set ? 
+is the property correctly set ?
 
 ```ts
 return boolean
 ```
 
 ---
+
+## 4. Code example
+
+> I can make an object representing myself.
+
+```ts
+const me = {
+    firstName : "Tan",
+    lastName : "KARASU"
+}
+
+// i can set my id if i enter a new company
+Reflect.defineProperty( me, "id", { value: 1 } );
+
+// or, depends how property is set, we can check if operation is success
+
+if( Reflect.defineProperty( me, "id", { value: 1})) {
+    // some stuff
+}
+```
 
 ---
 

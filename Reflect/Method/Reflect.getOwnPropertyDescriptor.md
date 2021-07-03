@@ -46,6 +46,41 @@ return object | undefined
 
 ---
 
+## 4. Code example
+
+```ts
+
+ let obj = { 
+     x: "hello"
+ }
+```
+
+> on existing property
+
+```ts
+Reflect.getOwnPropertyDescriptor( obj, 'x' );
+// => {
+    // value: "hello", 
+    // writable: true, 
+    // enumerable: true, 
+    // configurable: true
+    // }
+```
+
+> on non-existing property
+
+```ts
+Reflect.getOwnPropertyDescriptor( obj, 'y' );
+// => undefined
+```
+
+> on Array-like object property
+
+```ts
+Reflect.getOwnPropertyDescriptor( [], 'length' );
+// {value: 0, writable: true, enumerable: false, configurable: false}
+```
+
 ---
 
 [go home](../Reflect.md)
