@@ -49,6 +49,8 @@ return new target | new newTarget
 
 ## 4. Code example
 
+> an addition example:
+
 ```ts
 const assert = require("assert");
 
@@ -64,6 +66,41 @@ const obj2 = Reflect.construct(addition, args);
 
 // expected result
 assert.strictEqual( obj1.sum, obj2.sum );
+```
+
+> What about if we create a greeting class ?
+
+```ts
+// a simple class who greet by your name.
+class Greeting {
+    constructor(name){
+        this.name = name;
+    }
+
+    greet() {
+        return `Hello ${this.name}!`;
+    }
+}
+```
+
+> we want to make a factory with this class.  
+> in ES5 it will be like this:
+
+```ts
+function greetingFactory( name ){
+
+    // we pass the prototype of greeting into instance
+    var instance = Object.create( Greeting.prototype );
+    Greeting.call( instance, name);
+
+    return instance
+}
+```
+
+> in ES6:
+
+```ts
+const greetingFactory = ( name) => Reflect.construct(Greeting, [name]);
 ```
 
 ---
