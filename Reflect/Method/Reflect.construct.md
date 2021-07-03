@@ -47,6 +47,25 @@ return new target | new newTarget
 
 ---
 
+## 4. Code example
+
+```ts
+const assert = require("assert");
+
+function addition(a, b, c) {
+    this.sum = a + b + c;
+}
+
+const args = [1, 2, 3];
+
+// 2 ways of doing the same thing
+const obj1 = new addition(...args);
+const obj2 = Reflect.construct(addition, args);
+
+// expected result
+assert.strictEqual( obj1.sum, obj2.sum );
+```
+
 ---
 
 [go home](../Reflect.md)
