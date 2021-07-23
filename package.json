@@ -19,11 +19,15 @@
   },
   "homepage": "https://github.com/tankarasu/TK_JS_Documentation#readme",
   "devDependencies": {
+    "@jest/globals": "^27.0.6",
+    "dotenv": "^10.0.0",
     "nodemon": "^2.0.7"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.14.8",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.14.0",
+    "babel-jest": "^27.0.6",
     "jest": "^27.0.6",
     "ts-jest": "^27.0.3",
     "typescript": "^4.3.5"

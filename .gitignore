@@ -1,11 +1,13 @@
 # folders
 node_modules/
-test/
 .vscode/ 
 
 # Javascript
 write.js
 reflect.ts
+reflect.js
+reflect.spec.ts
+index.js
 
 # markdown
 reminder.md
